@@ -1,0 +1,31 @@
+//here you can change the varibels to your likeing -eliaspm
+var moneyamount = 100000
+var seclevel = 6
+var server = "iron-gym"
+//--------------------------------------------------------//
+// moneyamount changes the amount of money the minimum of growth stops 
+// secleavel changes the minimum level of the security can be before hacking
+// server changes the server the hacking script is going to attack
+//--------------------------------------------------------//
+
+var moneyserver = getServerMoneyAvailable(server)
+var minsecurity = getServerMinSecurityLevel(server)
+while (true) {
+while (minsecurity > seclevel) {
+		weaken(server)
+
+
+
+	}
+
+	
+	while (moneyserver < moneyamount) {
+		grow(server)
+
+
+	} if(minsecurity < seclevel & moneyserver > moneyamount) {
+		hack(server)
+
+
+	}
+}
